@@ -33,7 +33,7 @@ export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) =>
 
   const toggleDarkMode = () => {
     console.log('Toggling dark mode from', darkMode, 'to', !darkMode); // Debug log
-    setDarkMode(prev => !prev);
+    setDarkMode((prev: boolean) => !prev);
   };
 
   const value: ThemeContextType = {
