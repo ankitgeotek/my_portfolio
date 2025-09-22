@@ -10,14 +10,16 @@ import {
   Avatar,
   Chip,
   Stack,
+  Paper,
+} from '@mui/material';
+import {
   Timeline,
   TimelineItem,
   TimelineSeparator,
   TimelineConnector,
   TimelineContent,
   TimelineDot,
-  Paper,
-} from '@mui/material';
+} from '@mui/lab';
 import {
   School,
   Work,

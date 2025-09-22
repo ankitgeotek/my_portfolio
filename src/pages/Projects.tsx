@@ -29,9 +29,6 @@ import {
   Search,
   FilterList,
   Close,
-  Code,
-  Analytics,
-  Psychology,
   Visibility,
 } from '@mui/icons-material';
 import { SelectChangeEvent } from '@mui/material/Select';

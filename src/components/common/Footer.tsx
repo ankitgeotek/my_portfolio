@@ -15,6 +15,7 @@ import {
   Twitter,
   FileDownload,
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const socialLinks = [
@@ -66,13 +67,16 @@ const Footer: React.FC = () => {
                 Quick Links
               </Typography>
               <Stack spacing={1} sx={{ mb: 2 }}>
-                <MuiLink href="/about" color="text.secondary" underline="hover">
+                <MuiLink component={Link} to="/about" color="text.secondary" underline="hover">
                   About Me
                 </MuiLink>
-                <MuiLink href="/projects" color="text.secondary" underline="hover">
+                <MuiLink component={Link} to="/projects" color="text.secondary" underline="hover">
                   Projects
                 </MuiLink>
-                <MuiLink href="/contact" color="text.secondary" underline="hover">
+                <MuiLink component={Link} to="/blogs" color="text.secondary" underline="hover">
+                  Blog
+                </MuiLink>
+                <MuiLink component={Link} to="/contact" color="text.secondary" underline="hover">
                   Contact
                 </MuiLink>
               </Stack>

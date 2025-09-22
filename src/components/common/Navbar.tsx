@@ -28,6 +28,7 @@ const navigationItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Projects', href: '/projects' },
+  { label: 'Blog', href: '/blogs' },
   { label: 'Contact', href: '/contact' },
 ];
 

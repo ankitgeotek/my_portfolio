@@ -16,7 +16,6 @@ import {
   Analytics,
   Code,
   TrendingUp,
-  School,
   Launch,
   GitHub,
 } from '@mui/icons-material';

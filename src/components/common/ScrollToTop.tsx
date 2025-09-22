@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Fab, Zoom } from '@mui/material';
 import { KeyboardArrowUp } from '@mui/icons-material';
+import { useLocation } from 'react-router-dom';
 
 const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     const toggleVisibility = () => {
