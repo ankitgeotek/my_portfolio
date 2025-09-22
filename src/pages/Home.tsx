@@ -54,7 +54,7 @@ const Home: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Your Name - Data Scientist Portfolio"
+        title="Ankit Kumar - Data Scientist Portfolio"
         description="Experienced Data Scientist specializing in machine learning, data analysis, and predictive modeling. View my projects and expertise."
         keywords="data scientist, machine learning, python, analytics, portfolio"
       />
@@ -85,11 +85,11 @@ const Home: React.FC = () => {
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
-                  Hello, I'm Your Name
+                  Hello, I'm Ankit Kumar
                 </Typography>
                 
-                <Typography variant="h4" color="text.secondary" gutterBottom>
-                  Data Scientist & ML Engineer
+                <Typography variant="h5" color="text.secondary" gutterBottom>
+                  Data Scientist | IIT Bombay Alum | Expert in ML, DL, AI, NLP
                 </Typography>
                 
                 <Typography
@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                   </Button>
                   <Button
                     component="a"
-                    href="https://github.com/yourusername"
+                    href="https://github.com/ankitgeotek"
                     target="_blank"
                     variant="outlined"
                     size="large"
@@ -250,6 +250,7 @@ const Home: React.FC = () => {
             borderRadius: 4,
             background: `linear-gradient(135deg, ${theme.palette.primary.main}15, ${theme.palette.secondary.main}15)`,
             textAlign: 'center',
+            mb: 8,
           }}
         >
           <Typography variant="h3" component="h2" gutterBottom>

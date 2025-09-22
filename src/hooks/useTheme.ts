@@ -14,8 +14,6 @@ interface ThemeContextProviderProps {
 export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  console.log('ThemeContextProvider rendering, darkMode:', darkMode); // Debug log
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const savedMode = localStorage.getItem('darkMode');
@@ -32,7 +30,6 @@ export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) =>
   }, [darkMode]);
 
   const toggleDarkMode = () => {
-    console.log('Toggling dark mode from', darkMode, 'to', !darkMode); // Debug log
     setDarkMode((prev: boolean) => !prev);
   };
 

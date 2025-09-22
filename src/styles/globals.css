@@ -18,5 +18,5 @@ body {
 /* Debug styles - remove these later */
 .App {
   min-height: 100vh;
-  background: linear-gradient(45deg, #f0f0f0 0%, #e0e0e0 100%);
+  /* background: linear-gradient(45deg, #f0f0f0 0%, #e0e0e0 100%); */
 }
