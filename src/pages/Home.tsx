@@ -154,6 +154,8 @@ const Home: React.FC = () => {
                 }}
               >
                 <Avatar
+                  src="/src/assets/my_pic_01.jpeg"  // Use src prop instead
+                  alt="Ankit Kumar"   
                   sx={{
                     width: { xs: 200, md: 300 },
                     height: { xs: 200, md: 300 },
@@ -161,7 +163,7 @@ const Home: React.FC = () => {
                     background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
                   }}
                 >
-                  YN
+                  Ankit Kumar
                 </Avatar>
               </Box>
             </Grid>

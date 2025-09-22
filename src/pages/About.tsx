@@ -6,7 +6,6 @@ import {
   Grid,
   Card,
   CardContent,
-  LinearProgress,
   Avatar,
   Chip,
   Stack,
@@ -21,9 +20,12 @@ import {
   TimelineDot,
 } from '@mui/lab';
 import {
+  Code,
+  Web,
+  DataObject,
+  Terminal,
   School,
   Work,
-  Code,
   Analytics,
   Psychology,
   Storage,
@@ -33,6 +35,38 @@ import {
 import SEOHead from '../components/common/SEOHead';
 
 const About: React.FC = () => {
+    const skillCategories = [
+    {
+      category: 'Programming Languages',
+      icon: <Code />,
+      skills: ['Python']
+    },
+    {
+      category: 'Web Development',
+      icon: <Web />,
+      skills: ['React.js', 'Streamlit']
+    },
+    {
+      category: 'Large Language Models (LLMs)',
+      icon: <Psychology />,
+      skills: ['LangChain', 'LangGraph', 'PyTorch', 'Hugging Face Transformers']
+    },
+    {
+      category: 'Database Management',
+      icon: <Storage />,
+      skills: ['SQL', 'Faiss', 'Milvus (Vector DB)']
+    },
+    {
+      category: 'Python Libraries and Tools',
+      icon: <DataObject />,
+      skills: ['Pandas', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'NLTK', 'spaCy', 'RESTful API']
+    },
+    {
+      category: 'Cloud & DevOps',
+      icon: <Cloud />,
+      skills: ['AWS (IAM, EC2, S3, Bedrock)', 'Git', 'GitHub']
+    }
+  ];
   const skills = [
     { name: 'Python', level: 95, category: 'Programming', icon: <Code /> },
     { name: 'Machine Learning', level: 90, category: 'ML/AI', icon: <Psychology /> },
@@ -117,7 +151,7 @@ const About: React.FC = () => {
             About Me
           </Typography>
           <Typography variant="h5" color="text.secondary" sx={{ maxWidth: 800, mx: 'auto' }}>
-            A passionate data scientist with 5+ years of experience transforming complex data 
+            A passionate data scientist with 3+ years of experience transforming complex data 
             into actionable business insights through advanced analytics and machine learning.
           </Typography>
         </Box>
@@ -127,6 +161,8 @@ const About: React.FC = () => {
           <Grid item xs={12} md={4}>
             <Box sx={{ textAlign: 'center' }}>
               <Avatar
+                src="/src/assets/my_pic_01.jpeg"  // Use src prop instead
+                alt="Ankit Kumar"   
                 sx={{
                   width: 200,
                   height: 200,
@@ -136,7 +172,7 @@ const About: React.FC = () => {
                   background: 'linear-gradient(45deg, #1976d2, #dc004e)',
                 }}
               >
-                YN
+                Ankit Kumar
               </Avatar>
               <Typography variant="h4" gutterBottom>
                 Your Name
@@ -150,7 +186,7 @@ const About: React.FC = () => {
           <Grid item xs={12} md={8}>
             <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.7 }}>
               I'm a passionate data scientist who believes in the power of data to drive meaningful change. 
-              With over 5 years of experience in the field, I've worked across various industries including 
+              With over 3 years of experience in the field, I've worked across various industries including 
               technology, finance, and healthcare, helping organizations unlock the value hidden in their data.
             </Typography>
             <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.7 }}>
@@ -168,7 +204,49 @@ const About: React.FC = () => {
         </Grid>
 
         {/* Skills Section */}
-        <Box sx={{ mb: 8 }}>
+<Box sx={{ mb: 8 }}>
+        <Typography variant="h3" component="h2" gutterBottom sx={{ mb: 4 }}>
+          Technical Skills
+        </Typography>
+        <Grid container spacing={4}>
+          {skillCategories.map((category, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Card sx={{ height: '100%' }}>
+                <CardContent>
+                  <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                    <Box sx={{ color: 'primary.main', mr: 2 }}>
+                      {category.icon}
+                    </Box>
+                    <Typography variant="h6" component="h3">
+                      {category.category}
+                    </Typography>
+                  </Box>
+                  <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+                    {category.skills.map((skill, skillIndex) => (
+                      <Chip
+                        key={skillIndex}
+                        label={skill}
+                        variant="outlined"
+                        size="small"
+                        sx={{ 
+                          mb: 1, 
+                          fontSize: '0.8rem',
+                          '&:hover': {
+                            backgroundColor: 'primary.light',
+                            color: 'white',
+                          }
+                        }}
+                      />
+                    ))}
+                  </Stack>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+
+        {/* <Box sx={{ mb: 8 }}>
           <Typography variant="h3" component="h2" gutterBottom sx={{ mb: 4 }}>
             Technical Skills
           </Typography>
@@ -201,7 +279,7 @@ const About: React.FC = () => {
               </Grid>
             ))}
           </Grid>
-        </Box>
+        </Box> */}
 
         {/* Experience Section */}
         <Box sx={{ mb: 8 }}>
