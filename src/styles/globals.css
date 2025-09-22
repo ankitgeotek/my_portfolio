@@ -1,0 +1,22 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Debug styles - remove these later */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #f0f0f0 0%, #e0e0e0 100%);
+}
