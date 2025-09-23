@@ -1,4 +1,5 @@
 import React from 'react';
+import myPic from '../assets/my_pic_01.jpeg'; // adjust relative path
 import {
   Box,
   Container,
@@ -154,7 +155,7 @@ const Home: React.FC = () => {
                 }}
               >
                 <Avatar
-                  src="/src/assets/my_pic_01.jpeg"  // Use src prop instead
+                  src= {myPic}  // Use src prop instead
                   alt="Ankit Kumar"   
                   sx={{
                     width: { xs: 200, md: 300 },
