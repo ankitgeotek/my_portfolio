@@ -23,14 +23,14 @@ import {
   Code,
   Web,
   DataObject,
-  Terminal,
+  // Terminal,
   School,
   Work,
-  Analytics,
+  // Analytics,
   Psychology,
   Storage,
   Cloud,
-  TrendingUp,
+  // TrendingUp,
 } from '@mui/icons-material';
 import SEOHead from '../components/common/SEOHead';
 
@@ -67,16 +67,16 @@ const About: React.FC = () => {
       skills: ['AWS (IAM, EC2, S3, Bedrock)', 'Git', 'GitHub']
     }
   ];
-  const skills = [
-    { name: 'Python', level: 95, category: 'Programming', icon: <Code /> },
-    { name: 'Machine Learning', level: 90, category: 'ML/AI', icon: <Psychology /> },
-    { name: 'Data Analysis', level: 92, category: 'Analytics', icon: <Analytics /> },
-    { name: 'SQL', level: 88, category: 'Database', icon: <Storage /> },
-    { name: 'TensorFlow/PyTorch', level: 85, category: 'Deep Learning', icon: <Psychology /> },
-    { name: 'Statistical Analysis', level: 90, category: 'Statistics', icon: <TrendingUp /> },
-    { name: 'Cloud Platforms (AWS/GCP)', level: 75, category: 'Cloud', icon: <Cloud /> },
-    { name: 'Data Visualization', level: 88, category: 'Visualization', icon: <Analytics /> },
-  ];
+  // const skills = [
+  //   { name: 'Python', level: 95, category: 'Programming', icon: <Code /> },
+  //   { name: 'Machine Learning', level: 90, category: 'ML/AI', icon: <Psychology /> },
+  //   { name: 'Data Analysis', level: 92, category: 'Analytics', icon: <Analytics /> },
+  //   { name: 'SQL', level: 88, category: 'Database', icon: <Storage /> },
+  //   { name: 'TensorFlow/PyTorch', level: 85, category: 'Deep Learning', icon: <Psychology /> },
+  //   { name: 'Statistical Analysis', level: 90, category: 'Statistics', icon: <TrendingUp /> },
+  //   { name: 'Cloud Platforms (AWS/GCP)', level: 75, category: 'Cloud', icon: <Cloud /> },
+  //   { name: 'Data Visualization', level: 88, category: 'Visualization', icon: <Analytics /> },
+  // ];
 
   const experience = [
     {
