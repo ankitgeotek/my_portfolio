@@ -31,6 +31,8 @@ const AppContent: React.FC = () => {
           <main style={{ minHeight: 'calc(100vh - 120px)' }}>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/my_portfolio" element={<Home />} />
+              <Route path="/ankit" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/blogs" element={<Blogs />} />
